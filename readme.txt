@@ -3,6 +3,6 @@ Student Id : w1363923
 Course : COEN278
 Project name : Student Information System - ruby Sinatra
 
-Heroku app URL : https://young-harbor-60888.herokuapp.com/
+Heroku app URL : https://
 username: april
 password: dong
