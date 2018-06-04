@@ -1,0 +1,18 @@
+<html>
+  <head> 
+    <link rel="stylesheet" type="text/css" href="<%= url("/styles.css")%>">
+    <title><%= @title || "Student information system" %></title>
+  </head>
+  <body>
+    <header>
+
+      <h1>Student Information System</h1>
+
+      <%= erb :nav%>
+
+    </header>
+  <%= yield %>
+  <img src ="/images/image.jpg" alt="frang sinatra" width=700>
+
+  </body>
+</html>

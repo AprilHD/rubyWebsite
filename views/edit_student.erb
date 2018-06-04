@@ -1,0 +1,15 @@
+<h1>Edit Student</h1>
+<div>
+	<form action="/Students/<%= @student.id%>" method="post">  
+		<%= erb :student_form %>
+
+		<div>
+		    <button type="submit">Save</button>
+			<input type="hidden" name="_method" value="put"/>
+		</div>
+	</form>
+	<form action="/Students/<%= @student.id%>" method="get">  
+		<button type="submit">Go back</button>
+	</form>
+</div>
+

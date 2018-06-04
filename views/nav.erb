@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/About'>About</a></li>
+        <li><a href='/Contact'>Contact</a>
+        <li><a href='/Students'>Students</a></li>
+        <li><a href='/Comments'>Comment</a></li>
+        <li><a href='/Video'>Video</a></li>
+        <% @login = "Login" %>
+        <% @login = "Logout" if (session[:admin] == true)%>
+        <li><a href='/Login_Logout'><%= @login %></a>
+        </li>
+    </ul>
+</nav>

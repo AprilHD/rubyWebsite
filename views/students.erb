@@ -1,0 +1,13 @@
+<h1>Students</h1>
+<a href="/Students/new">Add new student</a>
+
+ <% if @students.length != 0 %>
+   <ul> 
+     <% @students.each do |student| %>
+       <li>
+       	<a href="/Students/<%= student.id %>"><%= student.id%></a>
+       </li>
+       <% end %>
+ <% else %>
+   <p>No student information in the system yet.</p>
+ <% end %>

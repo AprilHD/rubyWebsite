@@ -1,0 +1,35 @@
+<h1>Student's information</h1>
+
+<div>
+	<table style="width:100%">
+		<tr>
+		    <th>Student ID</th>
+		    <th>Firstname</th>
+		    <th>Lastname</th> 
+		    <th>Birthday</th>
+		    <th>Address</th>
+		</tr>
+
+		<tr>
+			<td><%= @student.id%></th>
+			<td><%= @student.firstname%></th>
+			<td><%= @student.lastname%></th>
+			<td><%= @student.birthday.strftime('%b %d %Y')%></th>
+			<td colspan="2"><%= @student.address%></th>
+		</tr>
+	</table>
+</div>
+
+<div class="two_button">
+	<form action="/Students/<%= @student.id%>/edit" method="get">  
+		<button type="submit">Edit</button>
+	</form>
+
+	<form action="/Students/<%= @student.id%>" method="post"> 
+		<button type="submit">Delete</button>
+		<input type="hidden" name="_method" value="delete"/>
+	</form>
+    <form action="/Students" method ="get">
+     <button type ="submit">Go back</button>
+    </form>
+</div> 

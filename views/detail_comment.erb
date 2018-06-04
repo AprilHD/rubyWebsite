@@ -1,0 +1,13 @@
+<h1>Comment</h1>
+<div>
+	<p>Author: <%= @comment.firstname%> <%= @comment.lastname%></p>	
+	<p>Created time: <%= @comment.created_at.strftime("Published on %m/%d/%Y at %I:%M%p")%></p>
+	<p>Subject: <%= @comment.title%></p>
+	<p>Comment :</p>
+	<p><%= @comment.context%></p>
+</div>
+<div>
+	<form action="/Comments" method="get">  
+		<button type="submit">Go back</button>
+	</form>
+</div>

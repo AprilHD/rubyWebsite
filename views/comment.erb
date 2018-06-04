@@ -1,0 +1,13 @@
+<h1>Comments</h1>
+<a href="/Comments/new">Add new comment</a>
+
+ <% if @comments.length != 0 %>
+   <ul> 
+     <% @comments.each do |comment| %>
+       <li>
+       	<a href="/Comments/<%= comment.comment_id %>"><%= comment.title%></a> - <%=comment.created_at.strftime()%>
+       </li>
+       <% end %>
+ <% else %>
+   <p>No comments yet.</p>
+ <% end %>
