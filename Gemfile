@@ -12,13 +12,6 @@ gem "dm-timestamps"
 
 gem "thin"
 
-gem 'compass-aurora', '~>3.0.0'
-gem 'toolkit', '~>1.0.0'
-gem 'singularitygs', '~>1.0.7'
-gem 'breakpoint', '~>2.0.2'
-gem 'sassy-buttons', '~>0.1.4'
-gem 'compass-normalize', '~>1.4.3'
-
 gem "pg", :group => :production
 
 gem "dm-postgres-adapter"
